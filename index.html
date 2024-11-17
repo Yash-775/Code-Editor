@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <div class="logo">
+        <h1>Codash</h1>
+        <h3>Code Editor</h3>
+        </div>
+        <div class="editor">
+        <div class="left">
+        <label><i class='bx bxl-html5'></i>HTML <button class="copy-btn" onclick="copy()">Copy</button></label>
+        <textarea onkeyup="run()" spellcheck="false" id="html-code"></textarea>
+        <label><i class='bx bxl-css3' ></i>CSS <button class="copy-btn" onclick="copy2()">Copy</button></label>
+        <textarea onkeyup="run()" spellcheck="false" id="css-code"></textarea>  
+        <label><i class='bx bxl-javascript' ></i>JavaScript <button class="copy-btn" onclick="copy3()">Copy</button></label>
+        <textarea onkeyup="run()" spellcheck="false" id="javascript-code"></textarea>
+        </div>
+        <div class="right">   
+        <label><i class='bx bxs-right-arrow' style="font-size:12px;"></i>&nbsp;Output</label>
+        <iframe id="output"></iframe>
+        </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <p class="para">created by Yash</p>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
